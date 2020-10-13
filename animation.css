@@ -1,0 +1,54 @@
+html {
+    background-color:#ccc;
+    font-family:sans-serif;
+    height:100%;
+  }
+  
+  header {
+    padding:.5em;
+  }
+  
+  button {
+    background-color:#06c;
+    border:none;
+    border-radius:.5em;
+    color:#fff;
+    padding:1em 2em;
+  }
+  
+  .deck {
+    display:flex;
+    flex-wrap:wrap;
+    list-style:none;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+  }
+  
+  .card {
+    background-color:#fff;
+    border-radius:.5em;
+    box-sizing:border-box;
+    height:8em;
+    margin:.5em;
+    opacity:.5;
+    padding:1em;
+    position:relative;
+    transform:translateX(100vw) translateY(100vh) rotate(15deg);
+    transition:all 1s ease-out;
+    width:8em;
+  }
+  
+  .card .content {
+    opacity:0;
+    transition:all 2s ease-out;
+  }
+  
+  .card.loaded {
+    opacity:1;
+    transform:translateX(0) translateY(0) rotate(0);
+  }
+  
+  .card.loaded .content.loaded {
+    opacity:1;
+  }
