@@ -1,4 +1,10 @@
+.howerforlink {
+  color: #070906; 
+  font-weight: 600;
+}
 
+.howerforlink:hover {border-bottom: 2px solid black;
+color: #070906;}
 .flip-card {
     background-color: transparent;
     width: 250px;
